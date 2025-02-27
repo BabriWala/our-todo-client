@@ -29,7 +29,9 @@ const Home = () => {
 
   const handleDeleteTodo = (id) => {
     // console.log(id)
-    fetch(`http://localhost:5000/todos/${id}`, { method: "DELETE" });
+    fetch(`https://our-todo-server.vercel.app/todos/${id}`, {
+      method: "DELETE",
+    });
     // setMessage("Data has been deleted please refresh the page");
     getTodos();
   };
