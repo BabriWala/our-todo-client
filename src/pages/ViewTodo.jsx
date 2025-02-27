@@ -6,7 +6,7 @@ const ViewTodo = () => {
   const [todo, setTodo] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/todos/${id}`)
+    fetch(`https://our-todo-server.vercel.app/todos/${id}`)
       .then((res) => res.json())
       .then((data) => setTodo(data));
   }, [id]);

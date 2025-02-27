@@ -7,7 +7,7 @@ const Home = () => {
   const [message, setMessage] = useState("");
 
   const getTodos = () => {
-    fetch("http://localhost:5000/todos")
+    fetch("https://our-todo-server.vercel.app/todos")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

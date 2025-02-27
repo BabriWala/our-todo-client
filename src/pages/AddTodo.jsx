@@ -16,7 +16,7 @@ const AddTodo = () => {
     const convertedToJSONStringify = JSON.stringify(newTodo);
     console.log(convertedToJSONStringify);
 
-    fetch("http://localhost:5000/todos", {
+    fetch("https://our-todo-server.vercel.app/todos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
