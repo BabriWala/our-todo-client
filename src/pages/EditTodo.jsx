@@ -24,7 +24,7 @@ const EditTodo = () => {
     const convertedToJSONStringify = JSON.stringify(updateTodo);
     // console.log(convertedToJSONStringify);
 
-    fetch(`http://localhost:5000/todos/${id}`, {
+    fetch(`https://our-todo-server.vercel.app/todos/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
